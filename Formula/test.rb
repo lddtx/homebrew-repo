@@ -7,10 +7,9 @@ class Test < Formula
 
   bottle :unneeded
 
-  depends_on :java
+  depends_on :bash
 
   def install
-    prefix.install "fastjson-1.2.58.jar"
     (bin/"mytest").write <<~EOS
       #!/usr/bin/env bash
       echo "just for test, hello world"
