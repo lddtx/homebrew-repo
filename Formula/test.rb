@@ -8,7 +8,7 @@ class Test < Formula
   def install
     (bin/"mytest").write <<~EOS
       #!/usr/bin/env bash
-      echo 1111111111111
+      shell_output(111111111111)
     EOS
   end
 end
