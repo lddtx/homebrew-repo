@@ -1,4 +1,4 @@
-class Mytest < Formula
+class Test < Formula
   desc "GUI tool for investigating Java class files"
   homepage "https://github.com/zxh0/classpy"
   url "https://github.com/guxingke/oss/raw/master/dist/classpy/classpy-0.7.0.jar"
