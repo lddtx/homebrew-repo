@@ -1,4 +1,4 @@
-class Test < Formula
+class Mytest < Formula
   desc "GUI tool for investigating Java class files"
   homepage "https://github.com/zxh0/classpy"
   url "https://repo1.maven.org/maven2/com/alibaba/fastjson/1.2.58/fastjson-1.2.58.jar"
@@ -7,7 +7,7 @@ class Test < Formula
   depends_on :java
   
   def install
-    (bin/"test").write <<~EOS
+    (bin/"mytest").write <<~EOS
       #!/usr/bin/env bash
       exec java -version
     EOS
