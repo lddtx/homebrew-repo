@@ -6,9 +6,6 @@ class Test < Formula
   sha256 "4a25dfcec212ab1b5e31fd6c0ea68272a89bb2e5c5c37deb1a3a9a8172497409"
 
   def install
-    (bin/"mytest").write <<~EOS
-      #!/usr/bin/env bash
-      shell_output(111111111111)
-    EOS
+    shell_output(111111111111)
   end
 end
