@@ -5,14 +5,10 @@ class Test < Formula
   version "0.7.0"
   sha256 "4a25dfcec212ab1b5e31fd6c0ea68272a89bb2e5c5c37deb1a3a9a8172497409"
 
-  bottle :unneeded
-
-  depends_on :bash
-
   def install
     (bin/"mytest").write <<~EOS
       #!/usr/bin/env bash
-      echo "just for test, hello world"
+      exec cowsay hello world
     EOS
   end
 end
