@@ -8,8 +8,7 @@ class Mytest < Formula
   def install
     (bin/"mytest").write <<~EOS
       #!/usr/bin/env bash
-      echo 111111111111111
-      echo hello world
+      echo 😋😋😋😋😋😋😋😋
     EOS
   end
 end
